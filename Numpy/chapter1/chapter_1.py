@@ -10,5 +10,9 @@ good_np_sec = timeit.timeit('na.dot(na)', setup='import numpy as np; na = np.ara
 print normal_py_sec
 print naive_np_sec
 print good_np_sec
+
+na = np.arange(4)
+print na.dot(3)
+
 a = np.array([0, 1, 2, 3, 4, 5])
 print a
