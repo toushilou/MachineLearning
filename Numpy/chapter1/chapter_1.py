@@ -12,7 +12,12 @@ print naive_np_sec
 print good_np_sec
 
 na = np.arange(4)
-print na.dot(3)
+print na
+print na.dot(na)
 
 a = np.array([0, 1, 2, 3, 4, 5])
-print a
+b = a.reshape(3, 2)
+print b
+for t in xrange(3):
+    print b[t > 1, 0]
+print b[:, 0]
