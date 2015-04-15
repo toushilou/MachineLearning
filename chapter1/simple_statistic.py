@@ -9,6 +9,7 @@ print data.shape
 x = data[:, 0]
 y = data[:, 1]
 
+
 x = x[~sp.isnan(y)]
 y = y[~sp.isnan(y)]
 
